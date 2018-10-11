@@ -36,7 +36,9 @@ class UserCard extends React.Component {
           status = this.state.slideIndex == 0 ? COMPLETED : IN_PROGRESS;
           this.props.tasks.push({task: task, date : new Date(), status : status});
           this.setState({ tasks : this.props.tasks });
-          store_task(this.props.name, task, status);
+          console.log("PROPS");
+          console.log(this.props);
+          store_task(this.props.email, task, status); //If email, hide logic works, if name, hide logic doesnt work
           e.target.value = '';
           e.preventDefault();
       }

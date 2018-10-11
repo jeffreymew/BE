@@ -11,6 +11,11 @@ export function receiveProtectedData(data, users) {
         users = users.sort(function(x,y){return x[0] == data.email ? -1 : y[0] == data.email ? 1 : 0});
     }
     
+    console.log("Does user have task?");
+    console.log(user_has_tasks);
+    console.log(data);
+    console.log(users);
+    
     return {
         type: RECEIVE_PROTECTED_DATA,
         payload: {

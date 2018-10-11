@@ -27,7 +27,7 @@ app.use(require('morgan')('short'));
 }());
 
 app.all(/^\/api\/(.*)/, (req, res) => {
-    proxy.web(req, res, { changeOrigin: true, target: 'https://jmewflask.azurewebsites.net' }); //TODO point to right python server
+    proxy.web(req, res, { changeOrigin: true, target: 'https://jmewflasknewnew.azurewebsites.net/' }); //TODO point to right python server
 });
 
 app.get(/.*/, (req, res) => {

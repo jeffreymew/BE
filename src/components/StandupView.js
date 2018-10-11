@@ -40,10 +40,10 @@ export default class StandupView extends React.Component {
                     ? <h1>Loading data...</h1>
                     : [ 
                         (!this.props.data.user_has_tasks ? 
-                        <UserCard admin={this.props.userName} email={this.props.userName} name={this.props.data.data.first_name} tasks={[]}></UserCard> :
+                        <UserCard admin={this.props.userName} email={this.props.userName} name={this.props.data.data.first_name + " " + this.props.data.data.last_name} tasks={[]}></UserCard> :
                         <span/> ),
                         this.props.data.users.map(([key, value]) => 
-                            <UserCard admin={this.props.userName} email={key} name={value[0].user_id} tasks={value}></UserCard>
+                            <UserCard admin={this.props.userName} email={key} name={value[0].first_name + " " + value[0].last_name} tasks={value}></UserCard>
                         )
                     ] 
 
