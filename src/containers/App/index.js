@@ -1,6 +1,7 @@
 import React from 'react';
 
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 /* application components */
@@ -17,7 +18,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
 
     render() {
         return (
-            <MuiThemeProvider muiTheme={getMuiTheme()}>
+            <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                 <section>
                     <Header />
                     <div
