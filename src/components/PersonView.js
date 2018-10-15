@@ -86,7 +86,7 @@ class UserCard extends React.Component {
               </List>
             </div>
             <div>
-              {this.props.admin === this.props.name ?
+              {this.props.admin === this.props.email ?
               <div>
                   <TextField
                       hintText="What are you going to do today?"

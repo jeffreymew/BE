@@ -78,11 +78,6 @@ export class Header extends Component {
                             </div>
                             :
                             <div>
-                                <MenuItem onClick={() => this.dispatchNewRoute('/analytics')}>
-                                    Analytics
-                                </MenuItem>
-                                <Divider />
-
                                 <MenuItem onClick={(e) => this.logout(e)}>
                                     Logout
                                 </MenuItem>
