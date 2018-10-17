@@ -7,7 +7,7 @@
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
     "build:production": "npm run clean && npm run build",
     "lint": "eslint src",
-    "start": "node bin/server.js",
+    "start": "npm run build && node bin/server.js",
     "test": "karma start"
   },
   "repository": {
@@ -80,9 +80,6 @@
     "rc-datepicker": "^4.0.1",
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.3.1",
-    "react-calendar-component": "^1.0.0",
-    "react-date-picker": "^5.3.28",
-    "react-datepicker": "^0.37.0",
     "react-document-meta": "^2.0.0-rc2",
     "react-dom": "^15.1.0",
     "react-forms": "^2.0.0-beta33",
