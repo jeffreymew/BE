@@ -21,6 +21,7 @@
   "author": "https://github.com/jmew",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^3.2.2",
     "autoprefixer": "6.5.3",
     "axios": "^0.15.3",
     "babel-core": "^6.26.3",
