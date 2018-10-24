@@ -17,6 +17,8 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
     };
 
     render() {
+        darkBaseTheme.palette.primary1Color = "#2196f3";
+        
         return (
             <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                 <section>

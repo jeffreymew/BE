@@ -15,6 +15,9 @@ module.exports = {
             test: /\.scss$/,
             loader: 'style!css!postcss-loader!sass',
         }],
+        rules: [
+            { test: /[\/]jquery\.js$/, use: 'expose-loader?$!expose?jQuery' }
+        ]
     },
 
     plugins: [
@@ -31,6 +34,10 @@ module.exports = {
             compress: {
                 warnings: false,
             },
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
         }),
     ],
 };
